@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import '../blocs/bloc.dart';
 class LoginScreen extends StatelessWidget{
   Widget build(context){
     return Container(
