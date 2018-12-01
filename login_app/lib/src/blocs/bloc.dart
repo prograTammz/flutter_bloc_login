@@ -14,3 +14,4 @@ class Bloc with Validators{
     _pass.close();
   }
 }
+final dynamic bloc = Bloc ();
