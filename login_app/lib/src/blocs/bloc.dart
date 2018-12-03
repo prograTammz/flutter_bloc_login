@@ -3,8 +3,8 @@ import 'validators.dart';
 import 'package:rxdart/rxdart.dart';
 
 class Bloc with Validators{
-  final _email = StreamController<String>();
-  final _pass = StreamController<String>();
+  final _email = StreamController<String>.broadcast();
+  final _pass = StreamController<String>.broadcast();
   Stream<String> get email => _email.stream.transform(validateEmail);
   Stream<String> get password => _pass.stream.transform(validatePassword);
 
